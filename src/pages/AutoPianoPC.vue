@@ -4,17 +4,8 @@
   .app-bg { width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: -100; opacity: 0.5; background-size: cover; background-repeat: no-repeat; transition: all .5s linear; }
   .app-content { width: 100%; height: 100%; overflow-y: scroll; position: relative;
     .piano-scroll-wrap { overflow: hidden; }
-    .score-section { width: 100%; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
+    .score-section { width: 100%; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; margin-top: 5rem;  }
     .section-title { margin: 30px auto 20px; font-size: 28px; font-weight: 500; color: #333; }
-    .right-drawer { width: 500px; height: 100%; position: fixed; top: 0; right: -500px; z-index: 100; border-left: solid 1px #ccc; transition: all .3s ease-in-out;
-      .trigger { width: 30px; height: 86px; font-size: 16px; text-align: center; padding-top: 7px;  position: absolute; top: 50%; left: -32px; background: @c-red; color: #fff; cursor: pointer; z-index: 101; }
-      // .trigger::before { content: ''; width: 8px; height: 8px; background: #f00;; position: absolute; top: -2px; right: -2px; border-radius: 50%; }
-      .close { width: 20px; height: 20px; line-height: 20px; text-align: center; position: absolute; top: 10px; right: 15px; background: @c-red; color: #fff; cursor: pointer; z-index: 101; }
-      .component-manual-list { width: 100%; height: 100%; background: rgba(255, 255, 255, .9);  border-radius: 0; border: none;
-        // .list-item a { color: #fff; }
-      }
-    }
-    .right-drawer.show { right: 0; }
   }
 }
 </style>
@@ -25,14 +16,14 @@
 
     <div class="app-content">
       <PageHeader></PageHeader>
-      <RandomLyric></RandomLyric>
+      <!--<RandomLyric></RandomLyric>-->
       <Piano></Piano>
-      <div class="score-section responsive-section-a">
+      <!--<div class="score-section responsive-section-a">
         <ManualPlayScoreList></ManualPlayScoreList>
         <AutoPlayScoreList></AutoPlayScoreList>
-      </div>
-      <h2 class="section-title responsive-section-a"></h2>
-      <CommodityList />
+      </div>-->
+      <!--<h2 class="section-title responsive-section-a"></h2>-->
+      <!--<CommodityList />-->
       <div class="blank-page-pc" style="height: 200px;"></div>
       <!--<PageFooter></PageFooter>-->
     </div>

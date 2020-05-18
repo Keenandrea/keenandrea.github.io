@@ -1,6 +1,6 @@
 <style lang="less">
 @import url('../assets/style/variable.less');
-.score-container.component-manual-list { width: 40%; min-width: 500px; padding-bottom: 50%; font-size: 14px; overflow: hidden; background: transparent; border-radius: 5px; /* border: solid 1px #ddd;*/ position: relative;
+.score-container.component-manual-list { left: 5rem; margin: 0 auto; width: 35%; min-width: 200px; padding-bottom: 50%; font-size: 14px; overflow: hidden; background: red; border-radius: 5px; /* border: solid 1px #ddd;*/ position: relative;
   .list-view { width: 100%; height: 100%; position: absolute; top: 0; left: 0; padding: 20px 15px; overflow-y: scroll;  }
   .component-title { margin: 0 0 10px 0; font-size: 18px; font-weight: bold; position: relative;
     a.join { color: @c-red; font-size: 14px; margin-left: 5px; text-decoration: underline;
@@ -35,7 +35,7 @@
 <template>
   <div class="score-container component-manual-list">
     <div class="list-view">
-      <!--
+ 
       <p class="component-title">
         <span class="title">{{ sectionTitle }}</span>
         <a target="_blank" href="https://github.com/WarpPrism/AutoPiano/issues/9" class="join">我要参与贡献&nbsp;!</a>
@@ -61,7 +61,6 @@
         <div class="score-item-content" v-html="showItem.content || ''"></div>
         <div class="score-item-lyrics" v-html="showItem.lyrics || ''"></div>
       </div>
-      -->
     </div>
   </div>
 </template>

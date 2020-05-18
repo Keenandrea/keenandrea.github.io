@@ -261,6 +261,9 @@ import { debounce } from '@/lib/wutils'
 import pianoAutoPlayMixin from '@/mixins/pianoAutoPlayMixin'
 import xmlAutoPlayMixin from '@/mixins/xmlAutoPlayMixin'
 import midiAutoPlayMixin from '@/mixins/midiAutoPlayMixin'
+
+let noteSet = new Set();
+
 export default {
   name: 'Piano',
   mixins: [pianoAutoPlayMixin, xmlAutoPlayMixin, midiAutoPlayMixin],
@@ -302,7 +305,8 @@ export default {
       isW11Active: false,
       isW12Active: false,
       isW13Active: false,
-      isW14Active: false      
+      isW14Active: false,
+
     }
   },
   mounted() {
@@ -436,7 +440,7 @@ export default {
       if (pressedNote) {
         this.playNote(pressedNote.name)
         this.isW1Active = !this.isW1Active;
-        console.log(name)
+        console.log(pressedNote.name)
       }
     },
 
@@ -445,7 +449,7 @@ export default {
       if (pressedNote) {
         this.playNote(pressedNote.name)
         this.isW2Active = !this.isW2Active;
-        console.log(name)
+        console.log(pressedNote.name)
       }
     },
 
@@ -455,6 +459,7 @@ export default {
         this.playNote(pressedNote.name)
         this.isW3Active = !this.isW3Active;
         console.log(name)
+        noteSet.add(name);
       }
     },
 
@@ -464,6 +469,7 @@ export default {
         this.playNote(pressedNote.name)
         this.isW4Active = !this.isW4Active;
         console.log(name)
+        noteSet.add(name);
       }
     },
 
@@ -473,6 +479,7 @@ export default {
         this.playNote(pressedNote.name)
         this.isW5Active = !this.isW5Active;
         console.log(name)
+        noteSet.add(name);
       }
     },
 
@@ -482,6 +489,7 @@ export default {
         this.playNote(pressedNote.name)
         this.isW6Active = !this.isW6Active;
         console.log(name)
+        noteSet.add(name);
       }
     },
 
@@ -491,6 +499,7 @@ export default {
         this.playNote(pressedNote.name)
         this.isW7Active = !this.isW7Active;
         console.log(name)
+        noteSet.add(name);
       }
     },
 
@@ -500,6 +509,7 @@ export default {
         this.playNote(pressedNote.name)
         this.isW8Active = !this.isW8Active;
         console.log(name)
+        noteSet.add(name);
       }
     },
 
@@ -509,6 +519,7 @@ export default {
         this.playNote(pressedNote.name)
         this.isW9Active = !this.isW9Active;
         console.log(name)
+        noteSet.add(name);
       }
     },
 
@@ -518,6 +529,7 @@ export default {
         this.playNote(pressedNote.name)
         this.isW10Active = !this.isW10Active;
         console.log(name)
+        noteSet.add(name);
       }
     },
 
@@ -527,6 +539,7 @@ export default {
         this.playNote(pressedNote.name)
         this.isW11Active = !this.isW11Active;
         console.log(name)
+        noteSet.add(name);
       }
     },
 
@@ -536,6 +549,7 @@ export default {
         this.playNote(pressedNote.name)
         this.isW12Active = !this.isW12Active;
         console.log(name)
+        noteSet.add(name);
       }
     },
 
@@ -545,6 +559,7 @@ export default {
         this.playNote(pressedNote.name)
         this.isW13Active = !this.isW13Active;
         console.log(name)
+        noteSet.add(name);
       }
     },
 
@@ -554,6 +569,7 @@ export default {
         this.playNote(pressedNote.name)
         this.isW14Active = !this.isW14Active;
         console.log(name)
+        noteSet.add(name);
       }
     },
 

@@ -1,6 +1,6 @@
 <style lang="less">
 @import url('../assets/style/variable.less');
-.score-container.component-auto-list { width: 40%; min-width: 500px; padding-bottom: 50%; font-size: 14px; overflow: hidden; background: transparent; border-radius: 5px; border: solid 1px #ddd; position: relative;
+.score-container.component-auto-list { right: 5rem; margin: 0 auto; width: 35%; min-width: 200px; padding-bottom: 50%; font-size: 14px; overflow: hidden; background: black; border-radius: 5px; border: solid 1px #ddd; position: relative;
   .list-view { width: 100%; height: 100%; position: absolute; top: 0; left: 0; padding: 20px 15px; overflow-y: scroll;  }
   .component-title { margin: 0 0 10px 0; font-size: 18px; font-weight: bold; line-height: 26px; position: relative;
     .title-img { display: inline-block; width: 26px; vertical-align: middle; }
@@ -59,7 +59,6 @@
   }
 }
 </style>
-<!--
 <template>
   <div class="score-container component-auto-list">
     <div class="list-view" v-show="currentView=='LIST'">
@@ -142,7 +141,7 @@
     </div>
   </div>
 </template>
-  -->
+
 <script>
 import Observe from 'observe'
 import { ScoreNum, ScoreXml, ScoreMidi, OBEvent } from 'config'
