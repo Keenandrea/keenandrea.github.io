@@ -3,6 +3,9 @@ var config = require('../config')
 var isProduction = process.env.NODE_ENV === 'production'
 
 module.exports = {
+  publicPath: process.env.NODE_ENV === 'production'
+  ? '/keenandrea.github.io/'
+  : '/',
   loaders: utils.cssLoaders({
     sourceMap: isProduction
       ? config.build.productionSourceMap
